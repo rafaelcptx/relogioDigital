@@ -1,0 +1,112 @@
+@import './variables';
+
+.main {
+    background-image: linear-gradient(100deg, $hColor, $lColor);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#container {
+    flex-direction: column;
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+
+#containerTime, #containerDate {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+
+    .transparentDiv {
+        width: 85vw;
+        height: 40vw;
+        background:transparent;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 5) ;
+        border-radius: 15px;      
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .black {
+        display: inline-flex;
+        flex-direction: column;
+        height: 23vw;
+        width: 23vw;
+        border-radius: 15px;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+p {color: white;
+    font-family: stabillo;
+    font-size: 12vw;
+}
+
+#hora, #minuto, #segundo {color: $lColor;}
+
+span {color: white;
+    font-family: Stabillo;
+    font-size: 5vw;
+}
+
+#timeImage {
+    width: 20vw;
+    position: absolute;
+    bottom: 75vh;
+    left: 40vw;
+}
+
+#dateImage {
+    width: 20vw;
+    position: absolute;
+    bottom: 40vh;
+    left: 40vw;    
+}
+
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 600px) {
+
+#container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+.transparentDiv {
+        width: 40vw;
+        height: 20vw;
+    }
+
+.black {
+        height: 10vw;
+        width: 10vw;
+    }
+
+p {font-size: 5.5vw;}
+
+span {font-size: 2vw;}
+
+#timeImage {
+    width: 10vw;
+    bottom: 62vh;
+    left: 20vw;
+}
+
+#dateImage {
+    width: 10vw;
+    bottom: 62vh;
+    left: 70vw;    
+}
+}
+}
