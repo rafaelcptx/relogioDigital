@@ -37,8 +37,8 @@ function color () {
     let green = document.getElementById("green").value;
     let blue = document.getElementById("blue").value;
 
-    let color1 = "rgba("+red+","+green+","+blue+", 1)"
-    let color2 = "rgba("+red+","+green+","+blue+", 0.5)"
+    let color1 = "rgb("+(red - 150)+","+(green - 150)+","+(blue - 150)+")"
+    let color2 = "rgb("+red+","+green+","+blue+")"
 
     let color = 'linear-gradient(to right, ' + color1 + ', '  + color2 +')';
     
@@ -47,5 +47,4 @@ function color () {
 
     let displayrgb = document.getElementById("displayRgb")
     displayrgb.innerText = "rgb ("+red+","+blue+","+green+")"
-
 }
