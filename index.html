@@ -10,47 +10,64 @@
 </head>
 <body>
     <div class="main">
-        <div id="container"> 
-            <div id="containerTime">
-                <img src="./files/time.png" alt="" id="timeImage">
-                <div class="transparentDiv">  
-                        <div id="contentDiv">
-                            <div class="black">
-                                <p id="hora">00</p>
-                                <span>horas</span>
+        <section>
+            <div id="container"> 
+                <div id="containerTime">
+                    <img src="./files/time.png" alt="" id="timeImage">
+                    <div class="transparentDiv">  
+                            <div id="contentDiv">
+                                <div class="black">
+                                    <p id="hora">00</p>
+                                    <span>horas</span>
+                                </div>
+                                <div class="black">
+                                    <p id="minuto">00</p>
+                                    <span>minutos</span>
+                                </div>
+                                <div class="black">
+                                    <p id="segundo">00</p>
+                                    <span>segundos</span>
+                                </div>
                             </div>
-                            <div class="black">
-                                <p id="minuto">00</p>
-                                <span>minutos</span>
-                            </div>
-                            <div class="black">
-                                <p id="segundo">00</p>
-                                <span>segundos</span>
-                            </div>
-                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div id="containerDate">
-                <img src="./files/date.png" alt="" id="dateImage">
-                <div class="transparentDiv">
-                        <div id="contentDiv">
-                            <div class="black">
-                                <p id="dia">01</p>
-                                <span>dia</span>
+                <div id="containerDate">
+                    <img src="./files/date.png" alt="" id="dateImage">
+                    <div class="transparentDiv">
+                            <div id="contentDiv">
+                                <div class="black">
+                                    <p id="dia">01</p>
+                                    <span>dia</span>
+                                </div>
+                                <div class="black">
+                                    <p id="mes">01</p>
+                                    <span>mês</span>
+                                </div>
+                                <div class="black">
+                                    <p id="ano">2022</p>
+                                    <span>ano</span>
+                                </div>
                             </div>
-                            <div class="black">
-                                <p id="mes">01</p>
-                                <span>mês</span>
-                            </div>
-                            <div class="black">
-                                <p id="ano">2022</p>
-                                <span>ano</span>
-                            </div>
-                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section>
+            <div class="haveFun">
+                <p class="funTitle">Divirta-se com a cor do background!</p>
+                <div class="wrapper">
+                    <span class="funSpan">R</span><input type="range" min="0" max="255" value="0" id="red" oninput="color()">
+                </div>
+                <div class="wrapper">
+                    <span class="funSpan">G</span><input type="range" min="0" max="255" value="0" id="green" oninput="color()">
+                </div>
+                <div class="wrapper">
+                    <span class="funSpan">B</span><input type="range" min="0" max="255" value="0" id="blue" oninput="color()">
+                </div>
+                <span id="displayRgb">rgb (0, 0, 0)</span>
+            </div>
+        </section>
     </div>
     <script src="./script.js"></script>
 </body>

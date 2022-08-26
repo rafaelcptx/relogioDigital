@@ -31,3 +31,21 @@ const relogio = setInterval (function time() {
     mes.innerText = month;
     ano.innerText = year;
 })
+
+function color () {
+    let red = document.getElementById("red").value;
+    let green = document.getElementById("green").value;
+    let blue = document.getElementById("blue").value;
+
+    let color1 = "rgba("+red+","+blue+","+green+", 1)"
+    let color2 = "rgba("+red+","+blue+","+green+",0.5)"
+
+    let color = 'linear-gradient(to right, ' + color1 + ', '  + color2 +')';
+    
+    let element = document.body
+    element.style.backgroundImage = color;
+
+    let displayrgb = document.getElementById("displayRgb")
+    displayrgb.innerText = "rgb ("+red+","+blue+","+green+")"
+
+}

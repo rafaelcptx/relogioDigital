@@ -1,10 +1,12 @@
 @import './variables';
 
+body {
+    background-image: linear-gradient(to right, $hColor, $lColor);
+    background: cover;
+}
 .main {
-    background-image: linear-gradient(100deg, $hColor, $lColor);
-    width: 100vw;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -12,6 +14,7 @@
     flex-direction: column;
     display: flex;
     width: 100vw;
+    padding-top: 35px;
 
 #containerTime, #containerDate {
         height: 50%;
@@ -53,7 +56,7 @@ p {color: white;
     font-size: 8vw;
 }
 
-#hora, #minuto, #segundo {color: $lColor;}
+#hora, #minuto, #segundo {color: white;}
 
 span {color: white;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -70,6 +73,31 @@ span {color: white;
     width: 20vw;
     position: relative;
     top:0;  
+}
+}
+
+.haveFun {
+    background-color: white;
+    border-radius: 10px;
+    width: 70vw;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 5) ;
+
+    .funSpan {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    .funTitle {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+.wrapper {
+    width: 100%;
+    text-align: center;
+
+    
+    input {display: inline-block;
+    width: 70%;
+    margin-left: 5px;
+    margin-top: 10px;
+}
 }
 }
 
@@ -103,4 +131,8 @@ span {font-size: 2vw;}
     width: 10vw;
  }
 }
+
+.haveFun {
+    width: 35vw;}
+
 }
