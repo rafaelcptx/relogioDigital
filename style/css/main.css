@@ -1,7 +1,3 @@
-@font-face {
-  font-family: Stabillo;
-  src: url(../files/StabilloMedium.ttf);
-}
 * {
   margin: 0;
   padding: 0;
@@ -19,13 +15,14 @@
   flex-direction: column;
   display: flex;
   width: 100vw;
-  height: 70vh;
 }
 #container #containerTime, #container #containerDate {
   height: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 #container .transparentDiv {
   width: 85vw;
@@ -50,32 +47,30 @@
 }
 #container p {
   color: white;
-  font-family: stabillo;
-  font-size: 12vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 8vw;
 }
 #container #hora, #container #minuto, #container #segundo {
   color: #00ffea;
 }
 #container span {
   color: white;
-  font-family: Stabillo;
-  font-size: 5vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 4vw;
 }
 #container #timeImage {
   width: 20vw;
-  position: absolute;
-  bottom: 75vh;
-  left: 40vw;
+  position: relative;
+  top: 0;
 }
 #container #dateImage {
   width: 20vw;
-  position: absolute;
-  bottom: 40vh;
-  left: 40vw;
+  position: relative;
+  top: 0;
 }
 
 /* DESKTOP VIEW */
-@media (min-width: 600px) {
+@media (min-width: 529px) {
   #container {
     flex-direction: row;
     justify-content: space-around;
@@ -90,19 +85,15 @@
     width: 10vw;
   }
   #container p {
-    font-size: 5.5vw;
+    font-size: 4vw;
   }
   #container span {
     font-size: 2vw;
   }
   #container #timeImage {
     width: 10vw;
-    bottom: 62vh;
-    left: 20vw;
   }
   #container #dateImage {
     width: 10vw;
-    bottom: 62vh;
-    left: 70vw;
   }
 }/*# sourceMappingURL=main.css.map */

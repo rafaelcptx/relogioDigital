@@ -30,8 +30,4 @@ const relogio = setInterval (function time() {
     dia.innerText = day;
     mes.innerText = month;
     ano.innerText = year;
-
-    
- 
-
 })
